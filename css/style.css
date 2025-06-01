@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+/*共通部分
+-------------------*/
+html {
+  font-size: 100%;
+}
+body {
+  font-family:"";
+  line-height: 1.7;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/*ヘッダー
+------------------*/
+.page-header {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-logo {
+  margin-left: 30px;
+}
+.main-nav {
+  list-style: none;
+  display: flex;
+  margin-right: 30px;
+  li{
+    a{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      border: 2px solid black;
+      padding: 0.2em 1em;
+      border-radius: 5px;
+      box-shadow: 2px 2px 3px #aaa;
+      margin: 20px;
+    }
+    a:hover {
+      transform: translate(-2px);
+      box-shadow: 0 0 0;
+    }
+  }
+}
+
+/*メインビジュアル
+------------------------------*/
+.main-visual {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.slider-top {
+  display: flex;
+  animation: scroll-left 60s linear infinite;
+}
+
+.slider-bottom {
+  display: flex;
+  animation: scroll-right 60s linear infinite;
+}
+
+.slider-top img,
+.slider-bottom img {
+  max-width: 300px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/*おすすめトピック
+-----------------------*/
+/*タイトル*/
+.recommend-topic {
+  text-align: center;
+  margin: 50px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid black;
+}
+
+.second-title {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 20px;
+}
+
+.second-title::before , 
+.second-title::after {
+  content: "";
+  flex: 1;
+  height: 3px;
+  background-color: black;  
+}
+
+/*記事*/
+.topic {
+  display: flex;
+  justify-content: center;
+  margin: 10px 30px;
+}
+.item {  
+  text-align: center;
+  margin: 0 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px #aaa;
+  background-color: white;
+  overflow: hidden;
+}
+.item-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+.item-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tourist-spot {
+  padding-right: 10px;
+}
+
+/*＃アート*/
+.category-section {
+  text-align: center;
+  margin: 50px;
+  padding-bottom: 30px;
+  background-color: rgb(209, 209, 209);
+}
+.category-item {
+   display: flex;
+  justify-content: center;
+  margin: 10px 30px;
+}
+.category-detail {
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px #aaa;
+  background-color: white;
+  overflow: hidden;
+}
+
+/*行きたいところ見つかった*/
+.serect-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 300%;
+    padding-right: 30px;
+  }
+  ul {
+    text-decoration: none;
+    color: black;
+  }
+  img {
+    max-width: 300px;
+  }
+}
+
+/*フッター*/
+footer {
+  padding: 30px 0;
+  background-color: #aaa;
+  text-align: center;
+}

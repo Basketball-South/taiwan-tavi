@@ -19,14 +19,18 @@ img {
 
 /*ヘッダー
 ------------------*/
-.page-header {
-  margin: 10px;
+header {
+  margin: 20px 10px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  display: flex;
+  align-items: center
 }
 .main-logo {
-  margin-left: 30px;
+  margin: 0 20px;
 }
 .main-nav {
   list-style: none;
@@ -42,9 +46,10 @@ img {
       border-radius: 5px;
       box-shadow: 2px 2px 3px #aaa;
       margin: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     a:hover {
-      transform: translate(-2px);
+      transform: translate(2px);
       box-shadow: 0 0 0;
     }
   }
@@ -59,7 +64,16 @@ img {
   text-align: center;
   h1 {
     font-size: 2rem;
+    letter-spacing: 0.3em;
+    color: white;
+    background-color:#ED5800;
+    
   }
+}
+.and-small {
+  font-size: 0.9em;
+  vertical-align: middle;
+  letter-spacing: 0; 
 }
 
 .slider-top {
@@ -104,13 +118,14 @@ img {
 /*タイトル*/
 .recommend-topic {
   text-align: center;
-  margin: 50px;
+  margin: 50px auto;
+  width: 80%;
   padding-bottom: 30px;
   border-bottom: 3px solid black;
 }
 
 .second-title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;  
@@ -128,12 +143,11 @@ img {
 /*記事*/
 .topic {
   display: flex;
-  justify-content: center;
-  margin: 10px 30px;
+  justify-content: space-between;
 }
-.item {  
-  text-align: center;
-  margin: 0 10px;
+.item {
+  width: 31.5%;  
+  margin-bottom: 20px;
   border: 2px solid black;
   border-radius: 20px;
   box-shadow: 2px 2px 3px #aaa;
@@ -150,7 +164,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  white-space: nowrap;    
+  flex-shrink: 0; 
+  }
+
 .tourist-spot {
   padding-right: 10px;
 }
@@ -158,9 +175,10 @@ img {
 /*＃アート*/
 .category-section {
   text-align: center;
-  margin: 50px;
+  margin: 50px auto;
+  width: 80%;
   padding-bottom: 30px;
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(220, 220, 220);
 }
 .category-item {
    display: flex;
@@ -176,27 +194,260 @@ img {
   overflow: hidden;
 }
 
-/*行きたいところ見つかった*/
+/*行きたいところ見つかった
+--------------------------*/
 .serect-nav {
+  margin: 50px auto;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   p {
-    font-size: 300%;
+    font-size: 250%;
     padding-right: 30px;
   }
   ul {
     text-decoration: none;
-    color: black;
+    list-style: none;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      white-space: nowrap;
+      flex-shrink: 0; 
+      padding: 10px 0;
+      a {
+        color: black;
+        word-wrap: unset;
+        font-size: large;        
+      }
+      i {
+        padding-right: 10px;
+      }
+    }
   }
   img {
     max-width: 300px;
   }
 }
+.area-location {
+  display: flex;
+  justify-content: space-between; /* 余白付きで両端に配置（調整可） */
+  align-items: center;            /* 縦位置を中央揃えに */
+  
+}
+
+
+/*地域名部分*/
+.nav-taichung {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-taichung::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #ff6666;
+  transition: width 0.3s ease;
+}
+.nav-taichung:hover::after {
+  width: 100%;
+}
+
+.nav-tainan {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-tainan::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #6cf;
+  transition: width 0.3s ease;
+}
+.nav-tainan:hover::after {
+  width: 100%;
+}
+
+.nav-kaohsiung {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-kaohsiung::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #fc0;
+  transition: width 0.3s ease;
+}
+.nav-kaohsiung:hover::after {
+  width: 100%;
+}
+
+/*地図*/
+.taiwan-location {
+  position: relative;
+}
+
+.taichung-pin,
+.tainan-pin,
+.kaohsiung-pin {
+  position: absolute;
+  font-size: 25px;
+  -webkit-text-stroke: 1px black;
+}
+
+.taichung-pin {
+  top: 30%;
+  left: 40%;
+  color: #ff6666;
+}
+.tainan-pin {
+  top: 55%;
+  left: 32%;
+  color: #6cf;
+}
+.kaohsiung-pin {
+  top: 67%;
+  left: 33%;
+  color: #fc0;
+}
+
+
+
+
 
 /*フッター*/
 footer {
   padding: 30px 0;
-  background-color: #aaa;
   text-align: center;
+  border-top: 1px solid black;
+}
+
+
+.secondpage-topic {
+  border-bottom: none;
+  margin: 50px auto;
+  width: 80%;
+}
+
+
+
+
+
+/*レスポンシブ対応*/
+@media (max-width: 768px) {
+  header {
+    display: block; 
+    text-align: center;
+  }
+
+  .header-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  .main-logo {
+    max-width: 80%;          
+    height: auto;
+  }
+
+  .main-nav {
+    display: inline-flex;
+    gap: 15px;
+    padding: 0;
+    margin: 10px auto 0;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+  .main-visual h1 {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-align: center;
+  }
+  .and-small {
+    font-size: 0.6em;
+  }
+  .slider-top,
+  .slider-bottom {
+   height: 10rem;
+  }
+
+  .topic,
+  .category-item {
+    display: flex;
+    flex-wrap: nowrap;           /* 折り返さず横一列に */
+    overflow-x: auto;            /* 横スクロール可能に */
+    scroll-snap-type: x mandatory; /* スナップ効果（任意） */
+    gap: 20px;
+    padding-bottom: 10px;
+    scroll-padding: 0 16px;
+  }
+
+  .item,
+  .category-detail {
+    min-width: 80%;              /* 表示幅に応じてサイズ調整 */
+    flex-shrink: 0;              /* 縮まないように */
+    scroll-snap-align: start;
+    width: 100%;    /* スナップ効果用 */
+  }
+  
+  .category-section {
+    width: 100%;
+  }
+
+
+
+  .area-location {
+    display: flex;
+    margin: 0 auto;
+  }
+
+
+
+
+
+  .serect-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .serect-nav p {
+    font-size: 2rem;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .serect-nav nav ul {
+    padding: 0;
+  }
+
+  .serect-nav img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
 }

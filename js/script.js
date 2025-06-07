@@ -1,14 +1,29 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const section = document.querySelector('.category-section');
-  const title = document.querySelector('.category-title');
+  const sections = document.querySelectorAll('.category-section-up');
 
-  title.addEventListener('mouseenter', () => {
-    section.style.backgroundColor = '#ff6f6f';
+  sections.forEach(section => {
+    section.addEventListener('mouseenter', () => {
+      section.style.backgroundColor = '#FFAA00aa';
+    });
+
+    section.addEventListener('mouseleave', () => {
+      section.style.backgroundColor = '';
+    });
   });
+});
 
-  title.addEventListener('mouseleave', () => {
-    section.style.backgroundColor = ''; // 元に戻す（空白だとCSSに従う）
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.category-section-down');
+
+  sections.forEach(section => {
+    section.addEventListener('mouseenter', () => {
+      section.style.backgroundColor = '#19BD00aa';
+    });
+
+    section.addEventListener('mouseleave', () => {
+      section.style.backgroundColor = '';
+    });
   });
 });

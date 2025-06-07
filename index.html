@@ -13,11 +13,19 @@
 
     <!--オリジナルCSS-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!--FontAwsome-->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   </head>
   <body>
-    <header class="page-header">
-      <a href="index.html"><img class="main-logo" src="img/logo.png" alt="台中＆台南＆高雄の旅のロゴ"></a>
-      <p>台北だけじゃない台湾、見てみない？</p>
+    <header>
+      <div class="header-logo">
+        <a href="index.html"><img class="main-logo" src="img/logo.png" alt="台中＆台南＆高雄の旅のロゴ"></a>
+      <p>台北だけじゃない台湾、<br>見てみない？</p>
+      </div>
       <nav>
         <ul class="main-nav">
           <li><a href="taichung.html">台中</a></li>
@@ -47,7 +55,7 @@
           <img src="img/main/main-6.webp" alt="">
           <img src="img/main/main-7.webp" alt="">
         </div>
-        <h1>台中＆台南＆高雄の旅</h1>
+        <h1>台中 <span class="and-small">＆</span> 台南 <span class="and-small">＆</span> 高雄の旅</h1>
         <div class="slider-bottom">
           <img src="img/main/main-8.webp" alt="">
           <img src="img/main/main-9.webp" alt="">
@@ -79,7 +87,7 @@
                 <h4 class="place-name">@台中</h4>              
               </div>
               <div class="item-text">           
-                <p>本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です</p>
+                <p>元軍人・黄さんが描いたカラフルな壁画が魅力のアートスポット。アクセスも良く、台湾の文化と芸術が融合した空間は観光客に大人気。カップルや家族連れにもおすすめの名所です。</p>
               </div>
             </div>
           </div>            
@@ -92,7 +100,7 @@
                 <h4 class="place-name">@台南</h4>              
               </div>
               <div class="item-text">           
-                <p>本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です</p>
+                <p>干潟や湿地、風車が織りなす約300～700haの自然保護区。夕焼けに映える「天空の鏡」景観や渡り鳥観察が人気で、SNS映え抜群な台湾絶景スポットとして注目されています。アクセスも台中からバスで便利です</p>
               </div>
             </div> 
           </div>           
@@ -105,16 +113,16 @@
                 <h4 class="place-name">@高雄</h4>              
               </div>
               <div class="item-text">           
-                <p>本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です本文です</p>
+                <p>1660年創建の道教寺院で中壇元帥（哪吒太子）を祀り、蓮池潭畔に位置。石柱や龍虎塔など華麗な建築美が魅力で、観光としても信仰の場としても人気なスポットです </p>
               </div>
             </div>   
           </div>         
         </div>
       </section>
 
-      <!--＃アート-->
-      <section class="category-section">
-        <h2 class="category-title">＃アート</h2>
+      <!--＃芸術-->
+      <section class="category-section category-section-up">
+        <h2 class="category-title">＃芸術</h2>
 
         <div class="category-item">
           <div class="category-detail">
@@ -141,18 +149,151 @@
         </div>
       </section>
 
+      <!--＃寺院-->
+      <section class="category-section category-section-down">
+        <h2 class="category-title">＃寺院</h2>
+
+        <div class="category-item">
+          <div class="category-detail">
+            <img class="item-img" src="img/taichung/taichung-12.webp" alt="南天宮關帝廟">
+            <div class="item-title">
+                <h3 class="tourist-spot">南天宮關帝廟</h3>
+                <h4 class="place-name">@台中</h4>              
+              </div>
+          </div>
+          <div class="category-detail">
+            <img class="item-img" src="img/tainan/tainan-10.webp" alt="南鯤鯓代天府">
+            <div class="item-title">
+                <h3 class="tourist-spot">南鯤鯓代天府</h3>
+                <h4 class="place-name">@台南</h4>              
+              </div>
+          </div>
+          <div class="category-detail">
+            <img class="item-img" src="img/kaohsiung/kaohsiung-11.webp" alt="梓官大埔福德祠">
+            <div class="item-title">
+                <h3 class="tourist-spot">梓官大埔福德祠</h3>
+                <h4 class="place-name">@高雄</h4>              
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!--＃自然-->
+      <section class="category-section category-section-up">
+        <h2 class="category-title">＃自然</h2>
+
+        <div class="category-item">
+          <div class="category-detail">
+            <img class="item-img" src="img/tainan/tainan-15.webp" alt="四草緑色隧道">
+            <div class="item-title">
+                <h3 class="tourist-spot">四草緑色隧道</h3>
+                <h4 class="place-name">@台南</h4>              
+              </div>
+          </div>
+          <div class="category-detail">
+            <img class="item-img" src="img/tainan/tainan-26.webp" alt="井仔腳瓦盤塩田">
+            <div class="item-title">
+                <h3 class="tourist-spot">井仔腳瓦盤塩田</h3>
+                <h4 class="place-name">@台南</h4>              
+              </div>
+          </div>
+          <div class="category-detail">
+            <img class="item-img" src="img/taichung/taichung-14.webp" alt="日月潭">
+            <div class="item-title">
+                <h3 class="tourist-spot">日月潭</h3>
+                <h4 class="place-name">@日月潭</h4>              
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!--＃夜景-->
+      <section class="category-section category-section-down">
+        <h2 class="category-title">＃夜景</h2>
+
+        <div class="category-item">
+          <div class="category-detail">
+            <img class="item-img" src="img/taichung/taichung-10.webp" alt="望高寮夜景公園">
+            <div class="item-title">
+                <h3 class="tourist-spot">望高寮夜景公園</h3>
+                <h4 class="place-name">@台中</h4>              
+              </div>
+          </div>
+          <div class="category-detail">
+            <img class="item-img" src="img/kaohsiung/kaohsiung-1.webp" alt="壽山（柴山）LOVE展望台">
+            <div class="item-title">
+                <h3 class="tourist-spot">壽山（柴山）LOVE展望台</h3>
+                <h4 class="place-name">@高雄</h4>              
+              </div>
+          </div>
+          <div class="category-detail">
+            <img class="item-img" src="img/kaohsiung/kaohsiung-21.webp" alt="愛河">
+            <div class="item-title">
+                <h3 class="tourist-spot">愛河</h3>
+                <h4 class="place-name">@高雄</h4>              
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+       <!--＃グルメ-->
+      <section class="category-section category-section-up">
+        <h2 class="category-title">＃グルメ</h2>
+
+        <div class="category-item">
+          <div class="category-detail">
+            <img class="item-img" src="img/tainan/tainan-21.webp" alt="宮原眼科">
+            <div class="item-title">
+                <h3 class="tourist-spot">宮原眼科</h3>
+                <h4 class="place-name">@台南</h4>              
+              </div>
+          </div>
+          <div class="category-detail">
+            <img class="item-img" src="img/tainan/tainan-24.webp" alt="花園夜市">
+            <div class="item-title">
+                <h3 class="tourist-spot">花園夜市</h3>
+                <h4 class="place-name">@台南</h4>              
+              </div>
+          </div>
+          <div class="category-detail">
+            <img class="item-img" src="img/kaohsiung/kaohsiung-4.webp" alt="六合夜市">
+            <div class="item-title">
+                <h3 class="tourist-spot">六合夜市</h3>
+                <h4 class="place-name">@高雄</h4>              
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
       <!--行きたいところ見つかった-->
       <section class="serect-nav">
         <p>行きたいところ、<br>見つかった？</p>
+         
 
-        <nav>
-          <ul class="bottom-nav">
-            <li><a href="taichung.html">台中</a></li>
-            <li><a href="tainan.html">台南</a></li>
-            <li><a href="kaohsiung.html">高雄</a></li>
+       <div class="area-location">
+         <nav>
+          <ul >
+            <li><i class="fa-regular fa-hand-point-right"></i><a class="nav-taichung" href="taichung.html">台中</a></li>
+            <li><i class="fa-regular fa-hand-point-right"></i><a class="nav-tainan" href="tainan.html">台南</a></li>
+            <li><i class="fa-regular fa-hand-point-right"></i><a class="nav-kaohsiung" href="kaohsiung.html">高雄</a></li>
           </ul>
-        </nav> 
-        <img src="img/taiwan.png" alt="台湾のイラスト">
+         </nav> 
+         <div class="taiwan-location">
+          <img src="img/taiwan.png" alt="台湾のイラスト">
+          <i class="taichung-pin fa-solid fa-location-dot"></i>
+          <i class="tainan-pin fa-solid fa-location-dot"></i>
+           <i class="kaohsiung-pin fa-solid fa-location-dot"></i>          
+        </div>
+       </div>
+        
       </section>
 
 
